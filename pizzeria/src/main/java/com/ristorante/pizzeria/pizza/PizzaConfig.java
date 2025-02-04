@@ -10,9 +10,25 @@ public class PizzaConfig {
     @Bean
     public Pizza margherita(){
         Pizza p = new Pizza();
-        p.setName("margherita");
+        p.setName("Margherita");
         p.setCalorie(350);
         p.setPrezzo(10.50);
+        return p;
+    }
+    @Bean
+    public Pizza pizzaSalame(){
+        Pizza p = new Pizza();
+        p.setName("Pizza Salame");
+        p.setCalorie(350);
+        p.setPrezzo(10.50);
+        return p;
+    }
+    @Bean
+    public Pizza pizzaMortadella(){
+        Pizza p = new Pizza();
+        p.setName("Pizza Mortadella");
+        p.setCalorie(350);
+        p.setPrezzo(12.50);
         return p;
     }
 

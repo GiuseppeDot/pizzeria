@@ -1,0 +1,26 @@
+package com.ristorante.pizzeria.menu;
+
+
+import com.ristorante.pizzeria.bevande.Bevanda;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MenuConfig {
+    @Autowired
+    private Bevanda aranciata;
+    @Autowired
+    private Bevanda cocaCola;
+
+
+    @Bean
+    public Menu creaMenu() {
+        Menu m = new Menu();
+        m.setName("Menu Pranzo");
+        m.getBevande().add(aranciata);
+        m.getBevande().add(cocaCola);
+
+    }
+
+}

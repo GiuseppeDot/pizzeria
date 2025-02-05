@@ -10,11 +10,13 @@ public class BevandaConfig {
     @Bean
     public Bevanda aranciata() {
         Bevanda b = new Bevanda();
-        b.setName("aranciata");
+        b.setName("Aranciata");
         b.setCalorie(100);
         b.setPrezzo(1.5);
         return b;
-    }    @Bean
+    }
+
+    @Bean
     public Bevanda cocaCola() {
         Bevanda b = new Bevanda();
         b.setName("Coca Cola");

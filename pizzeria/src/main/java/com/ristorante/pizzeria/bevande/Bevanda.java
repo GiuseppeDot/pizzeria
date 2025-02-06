@@ -1,6 +1,7 @@
 package com.ristorante.pizzeria.bevande;
 
 
+import com.ristorante.pizzeria.menu.ElementoMenu;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,10 +9,14 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Bevanda {
+public class Bevanda implements ElementoMenu {
 
-    private String name;
+    private String nomeBevanda;
     private int calorie;
     private double prezzo;
 
+    @Override
+    public String getNome() {
+        return nomeBevanda;
+    }
 }

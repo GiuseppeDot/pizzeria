@@ -1,0 +1,4 @@
+package com.ristorante.pizzeria.ordini;
+
+public enum StatoOrdine {
+}

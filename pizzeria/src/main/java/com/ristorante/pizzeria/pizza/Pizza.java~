@@ -1,10 +1,12 @@
 package com.ristorante.pizzeria.pizza;
 
 
+import com.ristorante.pizzeria.topping.Topping;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -12,10 +14,11 @@ import java.util.List;
 @NoArgsConstructor
 public class Pizza {
 
-    private String name;
+    private String nomePizza;
     private int calorie;
     private double prezzo;
-    List
+    private List<Topping> toppings = new ArrayList<>();
+
 
 
 }

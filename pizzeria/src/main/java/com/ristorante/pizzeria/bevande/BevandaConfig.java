@@ -10,7 +10,7 @@ public class BevandaConfig {
     @Bean
     public Bevanda aranciata() {
         Bevanda b = new Bevanda();
-        b.setName("Aranciata");
+        b.setNomeBevanda("Aranciata");
         b.setCalorie(100);
         b.setPrezzo(1.5);
         return b;
@@ -19,7 +19,7 @@ public class BevandaConfig {
     @Bean
     public Bevanda cocaCola() {
         Bevanda b = new Bevanda();
-        b.setName("Coca Cola");
+        b.setNomeBevanda("Coca Cola");
         b.setCalorie(157);
         b.setPrezzo(1.5);
         return b;

@@ -14,8 +14,6 @@ import java.util.List;
     @NoArgsConstructor
     @AllArgsConstructor
 public class Menu {
-    private String name;
-    List<Pizza> pizze = new ArrayList<>();
-    List<Bevanda> bevande = new ArrayList<>();
-    List<Topping> toppings = new ArrayList<>();
+    private String nomeMenu;
+    List<ElementoMenu> elementoMenus = new ArrayList<>();
 }

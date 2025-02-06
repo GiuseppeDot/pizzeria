@@ -10,7 +10,7 @@ public class ToppingConfig {
     @Bean
     public Topping abbondanteMozzarella() {
         Topping t = new Topping();
-        t.setName("abbondanteMozzarella");
+        t.setNomeTopping("abbondanteMozzarella");
         t.setCalorie(120);
         t.setPrezzo(0.50);
         return t;
@@ -18,7 +18,7 @@ public class ToppingConfig {
     @Bean
     public Topping patatine() {
         Topping t = new Topping();
-        t.setName("patatine");
+        t.setNomeTopping("patatine");
         t.setCalorie(140);
         t.setPrezzo(0.50);
         return t;
@@ -26,7 +26,7 @@ public class ToppingConfig {
     @Bean
     public Topping salame() {
         Topping t = new Topping();
-        t.setName("Salame");
+        t.setNomeTopping("Salame");
         t.setCalorie(110);
         t.setPrezzo(0.50);
         return t;
